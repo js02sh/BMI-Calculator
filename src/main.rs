@@ -50,18 +50,18 @@ fn main(){
     let b = Body::new(w,h,n);
     b.show();
 
-    let hong = Body{
-        name: "hong".to_string(),
-        weight: 80.0,
-        height:165.0,
-    };
-    let lim = Body{
-        name: "lim".to_string(),
-        weight:65.0,
-        height:170.0,
-    };
+    // let hong = Body{
+    //     name: "hong".to_string(),
+    //     weight: 80.0,
+    //     height:165.0,
+    // };
+    // let lim = Body{
+    //     name: "lim".to_string(),
+    //     weight:65.0,
+    //     height:170.0,
+    // };
 
-    println!("홍길동={:.2}",hong.calc_bmi());
-    println!("임꺽정={:.2}",lim.calc_bmi());
+    // println!("홍길동={:.2}",hong.calc_bmi());
+    // println!("임꺽정={:.2}",lim.calc_bmi());
 
 }
