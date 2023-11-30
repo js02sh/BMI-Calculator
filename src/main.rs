@@ -1,6 +1,5 @@
 // use std::fmt;
 use std::io;
-
 // 키와 몸무게 데이터를 가지는 구조체 --- (*1)
 struct Body {
     name: String,
@@ -24,9 +23,14 @@ impl Body {
     fn show(&self) {
         println!("The {}'s BMI is {:.1}", self.name, self.calc_bmi());
     }
-    
 }
 
+// fn input_num(prompt: &str) -> f32 { //나중에 러스트 제너릭? 으로 형 변환 알아보기
+//     println!("{}", prompt);
+//     let mut input = String::new();
+//     io::stdin().read_line(&mut input).expect("Failed to read line");
+//     input.trim().parse().expect("Please input a valid number") //return f32 number
+// }
 
 fn main() {
     // 구조체 초기화 --- (*2)
@@ -36,12 +40,19 @@ fn main() {
         .expect("Faild to read line");
     let name = name.trim().to_string();
 
-    //let name = "ho".to_string();
     let hong = Body::new(name ,80.0, 165.0);
     hong.show();
 
-    // 함수 호출 --- (*3)
-    // println!("홍길동 = {:.2}", calc_bmi(&hong));
-    // println!("임꺽정 = {:.1}", calc_bmi(&lim));
+
+    //이름, 성별, 나이, 키, 몸무게 입력하면 맞춰서 정보제공
+    //회원번호 입력해서 정보 저장
+    println!("Welcome to Health Indicator");
+    loop{
+            println!("Type your name pls: ");
+            
+        
+
+    }
+
 }
 
